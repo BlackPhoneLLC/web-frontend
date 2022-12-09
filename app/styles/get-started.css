@@ -13,6 +13,27 @@
     justify-content: center;
 }
 
+.box-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .box-get-started {
+        width: 90%;
+        padding: 30px;
+        background: #12121220;
+        backdrop-filter: blur(10px);
+        background-color: #121212;
+    }
+
+    .box-display {
+        flex-direction: column;
+    }
+}
+
+
 .box-get-started:hover {
     transition: all 0.3s ease-in-out;
     border: 1px solid #cccccc30;
@@ -25,12 +46,6 @@
     text-align: start;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.box-display {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .box-display-h2-p {

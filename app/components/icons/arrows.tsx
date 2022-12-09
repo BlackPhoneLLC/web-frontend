@@ -1,6 +1,13 @@
-export default function Arrows() {
+import ArrowJson from "./arrows.json";
+export default function Arrows(): JSX.Element | null {
+
+    if (typeof document === "undefined") return null;
     return <>
         {/* @ts-ignore */}
-        <lottie-player src="https://lottie.host/9ceb74f1-41e9-41f6-bdd7-e1647b347375/XKJMHJyVUp.json" autoplay></lottie-player>
+        <lottie-player
+            autoplay
+            loop
+            src={JSON.stringify(ArrowJson)}
+        />
     </>
 }

@@ -10,11 +10,13 @@ import {
 import globalStyles from "./styles/global.css";
 import getStartedStyles from "./styles/get-started.css";
 import navigationStyles from "./styles/navigation.css";
+import applyNowStyles from "./styles/apply-now.css";
 
 export const links: LinksFunction = () => {
   return [
     { rel: "stylesheet", href: globalStyles },
     { rel: "stylesheet", href: getStartedStyles },
+    { rel: "stylesheet", href: applyNowStyles },
     { rel: "stylesheet", href: navigationStyles },
     {
       rel: "stylesheet",
@@ -52,7 +54,6 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
 
         <Scripts />
         <LiveReload />

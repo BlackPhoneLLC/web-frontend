@@ -1,3 +1,5 @@
 export default function BlackPhoneIcon() {
-    return <img src="/logo.png" alt="/logo.png" className={"logo"} />
+    const redirect = () => window.location.href = "/"
+
+    return <img src="/logo.png" alt="/logo.png" className={"logo"} onClick={redirect} />
 }
